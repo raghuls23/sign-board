@@ -1,0 +1,85 @@
+  body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e8f9;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+}
+        #signpost {
+            position: relative;
+            width: 200px;
+        }
+        #post {
+            width: 20px;
+            height: 400px;
+            background: rgb(99, 83, 63);
+            margin: 0 auto;
+
+        }
+        .sign {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            font-family: 'Comic Sans MS', cursive;
+            border: 2px solid rgb(223, 215, 215);
+            border-radius: 10px;
+            clip-path: polygon(10% 0%, 100% 15%, 150% 0%, 100% 85%, 10% 100%, 0% 50%);       
+            }
+        .sign:nth-child(2) {
+            background: rgb(226,30,38);
+background: linear-gradient(66deg, rgba(226,30,38,1) 50%, rgba(220,24,32,0.9389005602240896) 100%, rgba(98,12,16,1) 100%);
+            top: 40px;
+            transform: rotate(1deg);
+        }
+        .sign:nth-child(3) {
+            background-color: #fff;
+            color: #26b8e0;
+            top: 110px;
+            transform: scaleX(-1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign:nth-child(3) span {
+            transform: scaleX(-1); 
+        }
+        .sign:nth-child(4) {
+            background-color: #66ccff;
+            top: 180px;
+            transform: rotate(1deg);
+        }
+        .rect {
+            position: absolute;
+            bottom: 75%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 15px;
+            height: 49px;
+            background-color: #2558a9;
+        }
+        .circle {
+            position: absolute;
+            bottom: 78%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: #e0e8f9;
+            border-radius: 50%;
+            border: 5px solid #2558a9;
+            z-index: 1;
+        
+        }
+        .snowflake {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2em;
+            opacity: 0.3;
+        }
